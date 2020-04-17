@@ -50,3 +50,4 @@ spec: {
   * Fiels are merged and duplicated fields handled recursively
   * In lists, all elements must match accordingly
 * Schema are typically written as Definitions using `::` instead of `:`
+  * Schema tells CUE that they are used for validation and should not be out as data

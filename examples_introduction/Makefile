@@ -6,6 +6,8 @@ export:
 	cue export dup.cue
 	@echo exporting check
 	cue export check.cue
+	@echo exporting schema
+	cue export schema.cue
 
 .PHONY: eval
 eval:
@@ -15,7 +17,13 @@ eval:
 	cue eval dup.cue
 	@echo evalin check
 	cue eval check.cue
+	@echo evalin schema
+	cue eval schema.cue
 
 .PHONY: eval-bad
 eval-bad:
 	cue eval dup_bad.cue
+
+.PHONY: schema
+schema:
+	cue export schema.cue
