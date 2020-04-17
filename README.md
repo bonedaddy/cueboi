@@ -7,7 +7,10 @@ learnin cue
 
 * [Website](https://cuelang.org/)
 * [Getting Started](https://cuelang.org/docs/install/)
-
+* [Using within Go programs](https://cuelang.org/docs/integrations/go/)
+* [Using with JSON](https://cuelang.org/docs/integrations/json/)
+* [Using with YAML](https://cuelang.org/docs/integrations/yaml/)
+* [Concepts](https://cuelang.org/docs/concepts/)
 
 # Examples:
 
@@ -38,3 +41,11 @@ spec: {
   name: last:  "Doe"
 }
 ```
+
+
+# Notes
+
+* `?: != ""` means the value is optional, but must be non-emtpy when specified
+* Duplicate fields are allowed if they dont conflict
+  * Fiels are merged and duplicated fields handled recursively
+  * In lists, all elements must match accordingly
