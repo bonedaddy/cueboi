@@ -39,3 +39,15 @@ fold:
 .PHONY: types
 types:
 	cue eval types.cue
+
+.PHONY: bottom
+bottom:
+	cue eval -i bottom.cue
+
+.PHONY: numbers
+numbers:
+	cue eval -i numbers.cue
+
+.PHONY: string-lit
+string-lit:
+	cue export stringlit.cue
