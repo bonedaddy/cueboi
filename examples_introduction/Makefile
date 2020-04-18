@@ -27,3 +27,15 @@ eval-bad:
 .PHONY: schema
 schema:
 	cue export schema.cue
+
+.PHONY: eval-order
+eval-order:
+	cue eval -i order.cue
+
+.PHONY: fold
+fold:
+	cue export fold.cue
+
+.PHONY: types
+types:
+	cue eval types.cue
